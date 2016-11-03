@@ -1,0 +1,30 @@
+﻿
+
+@helper Texto50(string local, string texto, string cor)
+{
+    <div class="col-xs-6" style="background-color:@cor">
+        <h3>@local</h3>
+        @if (@texto != null)
+        {
+            @texto
+        }
+        else
+        {
+            <p> Configure um texto para @local</p>
+        }
+    </div>
+}
+@helper Texto100(string local, string texto, string cor)
+{   
+    <div class="col-xs-12" style="background-color:@cor">
+        <h3>@local</h3>
+        @if (@texto != null)
+        {
+            @texto
+        }
+        else
+        {
+            <p> Configure um texto para @local</p>
+        }
+    </div>
+}

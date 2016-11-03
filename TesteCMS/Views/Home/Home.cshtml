@@ -1,0 +1,17 @@
+﻿@model List<TesteCMS.Models.Textos>
+@{
+    ViewBag.Title = "Home";
+}
+<div class="container-fluid">
+    <h2>Home</h2>
+    <div class="row">
+        <img src="" />
+    </div>
+    <div class="row">
+        <div name="bloco">
+            @MeuHelper.Texto50(Model[0].Local,Model[0].Texto,"#ff0000")
+            @MeuHelper.Texto50(Model[1].Local, Model[1].Texto,"#00ff00")
+        </div>
+    </div>
+    @MeuHelper.Texto100(Model[2].Local, Model[2].Texto, "#00fffd")
+</div>
